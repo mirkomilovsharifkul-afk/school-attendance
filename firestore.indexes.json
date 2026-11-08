@@ -1,0 +1,6 @@
+{"indexes":[
+ {"collectionGroup":"attendance","queryScope":"COLLECTION","fields":[{"fieldPath":"schoolId","order":"ASCENDING"},{"fieldPath":"classId","order":"ASCENDING"},{"fieldPath":"date","order":"ASCENDING"}]},
+ {"collectionGroup":"attendance","queryScope":"COLLECTION","fields":[{"fieldPath":"schoolId","order":"ASCENDING"},{"fieldPath":"studentId","order":"ASCENDING"},{"fieldPath":"date","order":"DESCENDING"}]},
+ {"collectionGroup":"students","queryScope":"COLLECTION","fields":[{"fieldPath":"schoolId","order":"ASCENDING"},{"fieldPath":"classId","order":"ASCENDING"},{"fieldPath":"lastName","order":"ASCENDING"}]},
+ {"collectionGroup":"auditLogs","queryScope":"COLLECTION","fields":[{"fieldPath":"schoolId","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]}
+],"fieldOverrides":[]}

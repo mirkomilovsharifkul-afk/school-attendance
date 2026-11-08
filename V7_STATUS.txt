@@ -1,0 +1,4 @@
+SCHOOL ATTENDANCE V7 — AUDITED SOURCE PACKAGE
+Based on the user's supplied V6 ZIP. This is NOT production-ready.
+See V7_AUDIT_REPORT.md for verified contents, blockers, and safe next steps.
+Do not use real student data or deploy the bootstrap endpoint until blockers are fixed and tests pass.

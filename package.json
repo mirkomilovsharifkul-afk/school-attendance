@@ -1,0 +1,22 @@
+{
+  "name": "school-attendance",
+  "private": true,
+  "version": "1.2.0",
+  "workspaces": [
+    "frontend",
+    "functions",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm --workspace frontend run dev",
+    "build": "npm run build --workspace shared && npm run build --workspace functions && npm run build --workspace frontend",
+    "test": "npm run build --workspace shared && npm run build --workspace functions && npm run test --workspace functions && npm run test --workspace frontend",
+    "lint": "npm run lint --workspaces --if-present",
+    "emulators": "firebase emulators:start --only auth,firestore,functions",
+    "deploy:rules": "firebase deploy --only firestore:rules,firestore:indexes",
+    "deploy:functions": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
